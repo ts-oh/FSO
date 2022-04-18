@@ -1,2 +1,1 @@
-# FSO
-# FSO
+# FSO: Part 0 Excercises
