@@ -1,4 +1,4 @@
-# Exercises 0.1.-0.6.
+# 0️⃣ Exercises 0.1.-0.6.
 
 **0.1: HTML**
 
