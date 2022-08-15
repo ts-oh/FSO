@@ -6,26 +6,26 @@ const App = () => {
   const course = "FSO - Half Stack application development";
 
   const part1 = "Fundamentals of React:";
-  const excercises1 = 10;
+  const exercises1 = 10;
 
   const part2 = "Using props to pass data:";
-  const excercises2 = 7;
+  const exercises2 = 7;
 
   const part3 = "State of a component:";
-  const excercises3 = 14;
+  const exercises3 = 14;
 
   return (
     <div>
       <Header c={course} />
       <Content
         p1={part1}
-        e1={excercises1}
+        e1={exercises1}
         p2={part2}
-        e2={excercises2}
+        e2={exercises2}
         p3={part3}
-        e3={excercises3}
+        e3={exercises3}
       />
-      <Total e1={excercises1} e2={excercises2} e3={excercises3} />
+      <Total e1={exercises1} e2={exercises2} e3={exercises3} />
     </div>
   );
 };
