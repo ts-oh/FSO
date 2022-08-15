@@ -1,11 +1,11 @@
-## Full Stack Open 
+# 📚 Full Stack Open {() => fs}
 
->Submission repository for FSO excercises.
-[Full Stack Open](https://fullstackopen.com/)
+__💻 Submission repository for FSO exercises.__
+[🔗 Full Stack Open](https://fullstackopen.com/)
 
 ***
 
-__General__
+__💁🏻‍♂️ General__
 
 This course serves as an introduction to modern web application development with JavaScript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs.
 
@@ -48,4 +48,4 @@ For each web application for a series of exercises, it is recommended to submit 
 
 The exercises are submitted __one part at a time__. When you have submitted the exercises for a part of the course you can no longer submit undone exercises for the same part.
 
-Note that in this part, there are more exercises besides those found below. _Do not submit your work_ until you have completed all of the exercises you want to submit for the part.
+__Note__ that in this part, there are more exercises besides those found below. _Do not submit your work_ until you have completed all of the exercises you want to submit for the part.
