@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Header from './Header';
 import Button from './Button';
-import StatisticLine from './StatisticLine';
+import Statistics from './Statistics';
 
 function App() {
   const [good, setGood] = useState(0);
@@ -35,7 +35,7 @@ function App() {
         handleNeutral={handleNeutral}
         handleBad={handleBad}
       />
-      <StatisticLine good={good} neutral={neutral} bad={bad} />
+      <Statistics good={good} neutral={neutral} bad={bad} />
     </>
   );
 }
