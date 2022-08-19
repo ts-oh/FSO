@@ -1,15 +1,15 @@
-import React from 'react';
+import React from 'react'
 
 const StatisticLine = (props) => {
-  const { text, value } = props;
-  return (
-    <>
-      <tr>
-        <td>{text}</td>
-        <td>{value}</td>
-      </tr>
-    </>
-  );
-};
+	const { text, value } = props
+	return (
+		<>
+			<tr>
+				<td>{text}</td>
+				<td>{value}</td>
+			</tr>
+		</>
+	)
+}
 
-export default StatisticLine;
+export default StatisticLine
