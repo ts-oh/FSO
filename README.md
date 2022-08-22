@@ -1,11 +1,18 @@
-# 📚 Full Stack Open {() => fs}
+# [🔗 Full Stack Open](https://fullstackopen.com/)
 
-__💻 Submission repository for FSO exercises.__
-[🔗 Full Stack Open](https://fullstackopen.com/)
+**This repository contains the exercise solutions to the Full Stack Open course from the University of Helsinki.**
 
-***
+---
 
-__💁🏻‍♂️ General__
+## 🗂 Solutions
+
+- [Part 0](https://github.com/ts-oh/FSO/tree/main/part0)
+- [Part 1](https://github.com/ts-oh/FSO/tree/main/part1)
+- [Part 2](https://github.com/ts-oh/FSO/tree/main/part2)
+
+---
+
+## ℹ️ General Information
 
 This course serves as an introduction to modern web application development with JavaScript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs.
 
@@ -21,7 +28,7 @@ Part 0 of the course material goes through the content and conduct of the course
 
 You can discuss the course and related topics in our dedicated group on Discord: [https://study.cs.helsinki.fi/discord/join/fullstack](https://study.cs.helsinki.fi/discord/join/fullstack) and on Telegram: [https://t.me/fullstackcourse](https://t.me/fullstackcourse). Please join the conversation!
 
-***
+---
 
 Exercises are submitted through GitHub and by marking completed exercises in the [submission application](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
@@ -38,14 +45,14 @@ part1
 part2
   phonebook
   countries
- ```
- 
+```
+
 See this [example submission repository](https://github.com/fullstack-hy2020/example-submission-repository)!
 
 For each part of the course there is a directory, which further branches into directories containing a series of exercises, like "unicafe" for part 1.
 
 For each web application for a series of exercises, it is recommended to submit all files relating to that application, except for the directory _node_modules_.
 
-The exercises are submitted __one part at a time__. When you have submitted the exercises for a part of the course you can no longer submit undone exercises for the same part.
+The exercises are submitted **one part at a time**. When you have submitted the exercises for a part of the course you can no longer submit undone exercises for the same part.
 
-__Note__ that in this part, there are more exercises besides those found below. _Do not submit your work_ until you have completed all of the exercises you want to submit for the part.
+**Note** that in this part, there are more exercises besides those found below. _Do not submit your work_ until you have completed all of the exercises you want to submit for the part.
