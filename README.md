@@ -2,15 +2,11 @@
 
 **This repository contains the exercise solutions to the Full Stack Open course from the University of Helsinki.**
 
----
-
 ## 🗂 Solutions
 
 - [Part 0](https://github.com/ts-oh/FSO/tree/main/part0)
 - [Part 1](https://github.com/ts-oh/FSO/tree/main/part1)
 - [Part 2](https://github.com/ts-oh/FSO/tree/main/part2)
-
----
 
 ## ℹ️ General Information
 
