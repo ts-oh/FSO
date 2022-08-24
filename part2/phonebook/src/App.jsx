@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { nanoid } from 'nanoid'
+import Filter from './components/Filter'
+import PersonForm from './components/PersonForm'
+import ListPeople from './components/ListPeople'
 
 const App = () => {
   const initialPerson = [
@@ -10,11 +13,9 @@ const App = () => {
   ]
 
   const [persons, setPersons] = useState(initialPerson)
-  // newPhone is for controlling the form input element
   const [newPhone, setNewPhone] = useState('')
-  // newName is for controlling the form input element
   const [newName, setNewName] = useState('')
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('')
 
   const addName = (e) => {
     e.preventDefault()
@@ -33,50 +34,25 @@ const App = () => {
     setNewPhone('')
   }
 
-  const handleNewName = (e) => {
-    setNewName(e.target.value)
-  }
-
-  const handleNewPhone = (e) => {
-    setNewPhone(e.target.value)
-  }
-
-  const handleSearchName = (e) => {
-    setSearch(e.target.value)
-    console.log(e.target.value)
-  }
-
-  const listPeople = () => {
-    return (persons.filter(person => (person.name.toLowerCase().includes(search.toLowerCase())))
+  const listPersons = () => {
+    return persons
+      .filter((person) =>
+        person.name.toLowerCase().includes(search.toLowerCase())
+      )
       .map((person) => (
         <p key={person.id}>
           {person.name}: {person.number}
         </p>
-      )))
+      ))
   }
 
   return (
     <main>
       <h2>Phonebook</h2>
-      <div>
-        filter showin with{' '}
-        <input type='search' value={search} onChange={handleSearchName} />
-      </div>
-      <form onSubmit={addName}>
-        <div>
-          name: <input value={newName} onChange={handleNewName} />
-        </div>
-        <div>
-          number: <input value={newPhone} onChange={handleNewPhone} />
-        </div>
-        <div>
-          <button type='submit'>add</button>
-        </div>
-        {newName}
-      </form>
-      <hr />
-      <h2>Numbers</h2>
-      <ul className='item-list'>{listPeople()}</ul>
+      <Filter search={search} setSearch={setSearch} />
+      <PersonForm newName={newName} setNewName={setNewName} newPhone={newPhone} setNewPhone={setNewPhone} addName={addName} />
+      <h3>Numbers</h3>
+      <ListPeople listPersons={listPersons} />
     </main>
   )
 }
