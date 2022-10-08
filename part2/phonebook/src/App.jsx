@@ -1,21 +1,25 @@
 import { useState } from 'react'
+import { useEffect } from 'react'
 import { nanoid } from 'nanoid'
 import Filter from './components/Filter'
 import PersonForm from './components/PersonForm'
 import ListPeople from './components/ListPeople'
+import axios from 'axios'
 
 const App = () => {
-  const initialPerson = [
-    { name: 'Arto Hellas', number: '040-123456', id: nanoid() },
-    { name: 'Ada Lovelace', number: '39-44-5323523', id: nanoid() },
-    { name: 'Dan Abramov', number: '12-43-234345', id: nanoid() },
-    { name: 'Mary Poppendieck', number: '39-23-6423122', id: nanoid() },
-  ]
-
-  const [persons, setPersons] = useState(initialPerson)
+ 
+  const [persons, setPersons] = useState([])
   const [newPhone, setNewPhone] = useState('')
   const [newName, setNewName] = useState('')
   const [search, setSearch] = useState('')
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/persons').then(
+      response => {
+        setPersons(response.data)
+      }
+    )
+  },[])
 
   const addName = (e) => {
     e.preventDefault()
